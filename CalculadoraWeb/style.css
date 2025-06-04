@@ -1,0 +1,124 @@
+ body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #f8b0c0, #f72e6a, #fa8314);
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.calculadora {
+  background: #eef9fc;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.calculadora:hover {
+  transform: scale(1.02);
+}
+
+input, select, button {
+  margin: 12px 0;
+  padding: 12px;
+  width: 85%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus, select:focus {
+  border-color: #ee435f;
+  outline: none;
+  box-shadow: 0 0 5px #da073baa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+  background-color: #f7640e;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f80663;
+}
+
+#resultado {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.historial {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 180px;
+  overflow-y: auto;
+  background: #ffd6d9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.historial h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.boton-limpiar {
+  background-color: #ff4e18;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.boton-limpiar:hover {
+  background-color: #f50a50;
+}
+.teclado {
+  margin-top: 20px;
+}
+
+#pantalla {
+  width: 85%;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #d7f6f8;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.botones button {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0a500;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botones button:hover {
+  background-color: #fc1359;
+}
